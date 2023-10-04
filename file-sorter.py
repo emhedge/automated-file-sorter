@@ -8,7 +8,7 @@ folderNames = ['image-files', 'csv-files', 'xlsx-files', 'json-files', 'document
 
 for loop in range(0, 6):
     if not os.path.exists(path + folderNames[loop]):
-    os.makedirs(path + folderNames[loop])
+        os.makedirs(path + folderNames[loop])
 
 for file in fileName:
     if '.jpg' in file and not os.path.exists(path + "image-files/" + file):
